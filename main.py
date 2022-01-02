@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import turtle as t
 from paddle import Paddle
 from ball import Ball
@@ -47,10 +41,3 @@ while paddle_game_is_on:
         scoreboard.r_point()
 
 screen.exitonclick()
-
-
-# In[ ]:
-
-
-
-

@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 import turtle as t
 ALIGNMENT = 'center'
 FONT = ('Arial', 25, 'normal')
@@ -29,10 +23,3 @@ class Scoreboard(t.Turtle):
     def r_point(self):
         self.r_score += 1
         self.update_scoreboard()
-
-
-# In[ ]:
-
-
-
-

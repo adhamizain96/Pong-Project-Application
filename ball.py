@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import turtle as t
 
 class Ball(t.Turtle):
@@ -19,7 +13,7 @@ class Ball(t.Turtle):
         x_new = self.xcor() + self.x_pos_new
         y_new = self.ycor() + self.y_pos_new
         self.goto(x_new, y_new)
-    def x_bouce(self):
+    def x_bounce(self):
         self.x_pos_new *= -1
         self.move_speed *= 0.9
     def y_bounce(self):
@@ -27,11 +21,4 @@ class Ball(t.Turtle):
     def reset_position(self):
         self.goto(0, 0)
         self.move_speed = 0.1
-        slef.x_bounce()
-
-
-# In[ ]:
-
-
-
-
+        self.x_bounce()

@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 import turtle as t
 
 class Paddle(t.Turtle):
@@ -20,10 +14,3 @@ class Paddle(t.Turtle):
     def go_down(self):
         y_new = self.ycor() + 20
         self.goto(self.xcor(), y_new)
-
-
-# In[ ]:
-
-
-
-
