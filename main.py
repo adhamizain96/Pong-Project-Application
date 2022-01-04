@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[2]:
 
 
 import turtle as t
@@ -22,18 +22,18 @@ screen.tracer(0)
 #user 1
 r_paddle = Paddle((350,0))
 #user 2
-l_paddle = Paddle((350,0))
+l_paddle = Paddle((-350,0))
 ball = Ball()
 scoreboard = Scoreboard()
 
 #t.listen() - set focus on TurtleScreen (in order to collect key-events)
 screen.listen()
-#user 1 - controls
-screen.onkey(r_paddle.go_up, 'Up')
-screen.onkey(l_paddle.go_up, 'Down')
-#user 2 - controls 
+#user 1 controls - w/s
 screen.onkey(r_paddle.go_up, 'w')
-screen.onkey(l_paddle.go_up, 's')
+screen.onkey(r_paddle.go_down, 's')
+#user 2 controls  - up/down
+screen.onkey(l_paddle.go_up, 'Up')
+screen.onkey(l_paddle.go_down, 'Down')
 
 paddle_game_is_on = True
 
